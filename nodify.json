@@ -1,0 +1,6 @@
+{
+    "start": "app.js",
+    "deployment": {
+        "bower": "bower install"
+    }
+}

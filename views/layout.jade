@@ -1,0 +1,34 @@
+!!! 5
+html(lang="en")
+    block link
+        -var selected = 'Home'; //default
+
+    -var menu = { 'Home': '/', 'About': '/about', 'Contact': '/contacts' };
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0")
+        title Simple NodeJS Application
+        link(href="/bower_components/bootstrap/dist/css/bootstrap.css",rel="stylesheet")
+        link(href="/css/styles.css",rel="stylesheet")
+    body
+        div.container
+            div.header
+                ul(class="nav nav-pills pull-right")
+                    each val, key in menu
+                        if selected === key
+                            li.active
+                                a(href=val, title=key)= key
+                        else
+                            li
+                                a(href=val, title=key)= key
+                h3.text-muted Nodify App
+            block content
+            div.footer
+                p &copy; Nodify 2013-2014</p>
+
+        // Bootstrap core JavaScript
+        // ==================================================
+        // Placed at the end of the document so the pages load faster -->
+        script(src="/bower_components/jquery/jquery.min.js")
+        script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")

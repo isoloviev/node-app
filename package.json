@@ -1,0 +1,28 @@
+{
+    "name": "nodify-simple-app",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "*",
+        "jade": "*"
+    },
+    "description": "node-app\r ========",
+    "main": "app.js",
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/isoloviev/node-app"
+    },
+    "keywords": [
+        "nodejs",
+        "expressjs",
+        "nodify"
+    ],
+    "author": "Ivan Soloviev",
+    "license": "GPL-2",
+    "bugs": {
+        "url": "https://github.com/isoloviev/node-app/issues"
+    }
+}
